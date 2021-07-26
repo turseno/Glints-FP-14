@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="styles.css">
+<script src="scripts.js" defer></script>
+
+</head>
+<style>
+#face {
+  position: relative;
+      cursor: pointer;
+ #name {
+  position: relative;
+      cursor: pointer; 
+}
+  } 
+  </style>
+<body>
+  <button onclick="myFunction()">Toggle dark mode</button>
+  
+ <div class="resume-wrapper">
+	<section class="profile section-padding">
+		<div class="container">
+			<div class="picture-resume-wrapper">
+        <div class="picture-resume">
+        <span><img id = "face" img src="SENO.png" alt="portrait" /></span>
+        <svg version="1.1" viewBox="0 0 350 350">
+  
+ <!--  <div class="resume-wrapper">
+      <section class="profile section-padding">
+        <div class="container">
+          <div class="picture-resume-wrapper">
+            <div class="picture-resume">
+            <span><img id = "name" img src="turseno.gif" alt="portrait" /></span>
+            <svg version="1.1" viewBox="0 0 350 350"> -->
+<script>
+  let start = Date.now(); // remember start time
+
+let timer = setInterval(function() {
+  // how much time passed from the start?
+  let timePassed = Date.now() - start;
+
+  if (timePassed >= 2000) {
+    clearInterval(timer); // finish the animation after 2 seconds
+    return;
+  }
+
+  // draw the animation at the moment timePassed
+  draw(timePassed);
+
+}, 20);
+
+// as timePassed goes from 0 to 2000
+// left gets values from 0px to 400px
+function draw(timePassed) {
+  face.style.left = timePassed / 5 + 'px';
+  name.style.left = timePassed / 5 + 'px';
+ <!--  goo.style.left = timePassed / 5 + 'px';
+  name-wrapper.style.left = timePassed / 5 + 'px'; -->
+}
+
+</script>
+
+<div class="resume-wrapper">
+  <h1>TURSENO <br/>DJUMADI</h1>
+</div>
+
+  <defs>
+    <filter id="goo">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -9" result="cm" />
+    </filter>
+  </defs>
+  
+  
+<g filter="url(#goo)" >  
+  
+  <circle id="main_circle" class="st0" cx="171.5" cy="175.6" r="130"/>
+  
+  <circle id="circle" class="bubble0 st1" cx="171.5" cy="175.6" r="122.7"/>
+  <circle id="circle" class="bubble1 st1" cx="171.5" cy="175.6" r="122.7"/>
+  <circle id="circle" class="bubble2 st1" cx="171.5" cy="175.6" r="122.7"/>
+  <circle id="circle" class="bubble3 st1" cx="171.5" cy="175.6" r="122.7"/>
+  <circle id="circle" class="bubble4 st1" cx="171.5" cy="175.6" r="122.7"/>
+  <circle id="circle" class="bubble5 st1" cx="171.5" cy="175.6" r="122.7"/>
+  <circle id="circle" class="bubble6 st1" cx="171.5" cy="175.6" r="122.7"/>
+  <circle id="circle" class="bubble7 st1" cx="171.5" cy="175.6" r="122.7"/>
+  <circle id="circle" class="bubble8 st1" cx="171.5" cy="175.6" r="122.7"/>
+  <circle id="circle" class="bubble9 st1" cx="171.5" cy="175.6" r="122.7"/>
+  <circle id="circle" class="bubble10 st1" cx="171.5" cy="175.6" r="122.7"/>
+
+</g>  
+</svg>
+      </div>
+
+
+    <div class="clearfix"></div>
+    <div class="contact-info clearfix">
+      <ul class="list-titles">
+        <li>Call/WA : +62 858 9223 9175</li>
+        <li>Mail    : turseno@outlook.com</li>
+        <li>Home    : Bandung, Indonesia</li>
+      </ul>
+    
+    </div>
+    <div class="contact-presentation"> 
+      <p><span class="bold">An enthusiast in new technologies, looking for opportunities for my knowledge to be applied into. </span></p>
+    </div>
+    <div class="contact-social clearfix">
+      <ul class="list-titles">
+        <li>LinkedIn <a href="">www.linkedin.com/profile/turseno</a></li>
+        <li>Facebook <a href="">www.facebook.com/turseno</a></li>
+        <li>GitHub <a href="">www.github.com/turseno</a></li>
+      </ul>
+      
+    <div class="section-wrapper clearfix">
+    <div class="container">
+      <h3 class="section-title">Skills</h3>
+        <ol>
+          <li class="skill-percentage">HTML / HTML5</li>
+          <li class="skill-percentage">Android Studio / Kotlin</li>
+          <li class="skill-percentage">PHP</li>
+          <li class="skill-percentage">JavaScript</li>
+          <li class="skill-percentage">CSS</li>
+        </ol>
+      </div>
+    </div>
+
+   <div class="section-wrapper">
+   <h3 class="section-title">Hobbies</h3>  
+      <p>Trying new programs, experimenting on them.</p>
+      <p>Swimming and Running. Sipping a cup of Arabica coffee.</p> 
+    </div>
+    
+  <div class="section-wrapper">
+  <h3 class="section-title">Contact Me</h3>
+
+  <form>
+  <input name="name" placeholder="Name" type="text" required /><br/>
+  <input name="email" placeholder="Email" type="email" /><br />
+  <textarea name="message" placeholder="Message" required ></textarea>
+  <input type="submit" value="SEND" class="submit" />
+</form>
+</div>
+
+</body>
+</html>
